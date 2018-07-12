@@ -34,7 +34,6 @@ class Triangle
     def valid?
       valid = [(length1 + length2 > length3), (length2 + length3 > length1), (length1 + length3 > length2)]
       [length1, length2, length3].each { |length| valid << false if length <= 0 }
-      end
     end
   
   # def true_triangle
