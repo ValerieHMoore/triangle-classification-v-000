@@ -32,11 +32,9 @@ class Triangle
   end
   
     def valid?
-      if length1 > 0 && length2 > 0 && length3 > 0 &&
-        (length1 + length2 > length3) ||
-        (length2 + length3 > length1) ||
-        (length1 + length3 > length2)
+      valid = [(length1 + length2 > length3), (length2 + length3 > length1), (length1 + length3 > length2)]
       end
+      if length1 > 0 && length2 > 0 && length3 > 0 &&
     end
   
   # def true_triangle
