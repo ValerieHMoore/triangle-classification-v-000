@@ -18,7 +18,7 @@ class Triangle
     #   end
     if !valid?
       raise TriangleError
-    if (length1 == length2) && (length2 == length3)
+    elsif (length1 == length2) && (length2 == length3)
       :equilateral
     elsif (length1 != length2) && (length2 == length3)
       :isosceles
