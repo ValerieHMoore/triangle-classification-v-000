@@ -16,8 +16,9 @@ class Triangle
     #   rescue TriangleError => error
     #       puts error.message
     #   end
+    
     valid?
-    elsif (length1 == length2) && (length2 == length3)
+    if (length1 == length2) && (length2 == length3)
       :equilateral
     elsif (length1 != length2) && (length2 == length3)
       :isosceles
