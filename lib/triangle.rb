@@ -10,12 +10,12 @@ class Triangle
   end
 
   def kind
-    if triangle.class != Triangle 
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
+    # if triangle.class != Triangle 
+    #   begin
+    #     raise TriangleError
+    #   rescue TriangleError => error
+    #       puts error.message
+    #   end
     if (length1 == length2) && (length2 == length3)
       :equilateral
     elsif (length1 != length2) && (length2 == length3)
